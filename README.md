@@ -27,3 +27,16 @@ Data variables: (12/94)
 ```
 
 (the json has to be unzipped for xarray use, it's 800Mb)
+
+
+eek though
+
+```python
+ds.sel(lon = 147.9375, lat = -45.9375).chlor_a.values
+```
+
+
+  File "/workenv/lib/python3.12/site-packages/numcodecs/shuffle.py", line 36, in _prepare_arrays
+    raise ValueError("Shuffle buffer is not an integer multiple of elementsize")
+ValueError: Shuffle buffer is not an integer multiple of elementsize
+>
